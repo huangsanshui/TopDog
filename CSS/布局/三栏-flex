@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .aside {
+            width: 300px;
+            height: 100px;
+        }
+
+        .aside-left {
+            background: red;
+        }
+
+        .aside-right {
+            background: blue;
+        }
+
+        .main {
+            background: yellow;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <aside class=" aside aside-left"></aside>
+        <main class="main">
+            <h1>flex布局解决方案</h1>
+            <p>包裹这3个块的父元素display：flex；中间元素的flex：1；</p>
+        </main>
+        <aside class=" aside aside-right"></aside>
+    </div>
+</body>
+
+</html>
